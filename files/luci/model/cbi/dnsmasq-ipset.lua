@@ -22,7 +22,7 @@ p.placeholder = "Upstream DNS Server"
 p.default = "127.0.0.1#5353"
 p.rmempty = false
 
-p:depends("dns_forward", "1")
+p:depends("dns_forward", "0")
 
 o = s:option(DynamicList, "managed_domain", translate("Managed Domain List"))
 
